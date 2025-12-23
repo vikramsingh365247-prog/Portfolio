@@ -1,5 +1,2 @@
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
-  });
-}
+// Reserved for future enhancements
+console.log("Portfolio loaded successfully");
