@@ -5,108 +5,117 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #222;
+  line-height: 1.6;
 }
 
-nav {
+/* HEADER */
+.header {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #111;
-  color: #fff;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  height: 90vh;
-  background: linear-gradient(to right, #111, #444);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
-.hero button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  border: none;
+.header h1 {
+  font-size: 3rem;
+}
+
+.header h2 {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.header p {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
   background: #fff;
-  color: #111;
+  color: #203a43;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer;
+  border-radius: 4px;
 }
 
+/* SECTIONS */
 .section {
-  padding: 60px 40px;
   max-width: 1100px;
   margin: auto;
+  padding: 70px 30px;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 .dark {
-  background: #f4f4f4;
+  background: #f4f6f8;
 }
 
-h2 {
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.info-grid {
+/* ABOUT */
+.about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.card {
+/* EXPERIENCE */
+.experience-card {
   background: #fff;
   padding: 25px;
-  margin-bottom: 20px;
-  border-left: 5px solid #111;
+  margin-bottom: 25px;
+  border-left: 5px solid #2c5364;
 }
 
-.card span {
+.experience-card span {
+  color: #666;
   font-size: 14px;
-  color: #555;
 }
 
+.experience-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
 
-.skills-grid div {
-  background: #111;
+.skills-grid span {
+  background: #203a43;
   color: #fff;
   padding: 15px;
   text-align: center;
+  border-radius: 4px;
 }
 
+/* FOOTER */
 footer {
-  background: #111;
+  background: #0f2027;
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
 }
